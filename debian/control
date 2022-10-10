@@ -1,0 +1,32 @@
+Source: libasync-mergepoint-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Jonathan Yu <jawnsy@cpan.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 8),
+               libmodule-build-perl
+Build-Depends-Indep: libtest-fatal-perl,
+                     libtest-pod-perl,
+                     perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libasync-mergepoint-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libasync-mergepoint-perl.git
+Homepage: https://metacpan.org/release/Async-MergePoint
+
+Package: libasync-mergepoint-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: Perl module to resynchronize multiple control flows
+ Async::Mergepoint is a module designed to provide a way to resynchronize
+ multiple parallel control flows. Often in program logic, multiple different
+ steps need to be taken that are independent of each other, but their total
+ result is needed before the next step can be taken. In synchronous code, the
+ usual approach is to do them sequentially.
+ .
+ An asynchronous or event-based program could do this, but if each step
+ involves some IO idle time, better overall performance can often be gained by
+ running the steps in parallel. A Async::MergePoint object can then be used to
+ wait for all of the steps to complete, before passing the combined result of
+ each step on to the next stage.

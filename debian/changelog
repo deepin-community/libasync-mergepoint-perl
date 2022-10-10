@@ -1,0 +1,91 @@
+libasync-mergepoint-perl (0.04-2.1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>  Wed, 18 May 2022 22:12:26 -0400
+
+libasync-mergepoint-perl (0.04-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Fri, 25 Dec 2020 17:55:35 +0100
+
+libasync-mergepoint-perl (0.04-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Niko Tyni ]
+  * Declare the package autopkgtestable
+  * Update to Standards-Version 3.9.6
+  * Add explicit build dependency on libmodule-build-perl
+
+ -- Niko Tyni <ntyni@debian.org>  Sat, 06 Jun 2015 20:46:56 +0300
+
+libasync-mergepoint-perl (0.04-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release
+  * debian/copyright: update copyright years for upstream files.
+  * debian/control: Change Build-Depends-Indep on libtest-exception-perl
+    to libtest-fatal-perl.
+  * Bump Debhelper compat level to 8.
+  * Bump Standards-Version to 3.9.2 (no changes needed).
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 10 Jun 2011 08:12:17 +0200
+
+libasync-mergepoint-perl (0.03-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+    + Adds some tests
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Ryan Niebur ]
+  * Email change: Jonathan Yu -> jawnsy@cpan.org
+
+  [ Nicholas Bamber ]
+  * Added myself to Uploaders
+  * Upped standards version to 3.9.1
+  * Upped debhelper version to 8
+  * Refreshed copyright
+  * Added debian/soruce/format
+
+  [ gregor herrmann ]
+  * Add libtest-pod-perl to Build-Depends-Indep.
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Wed, 16 Feb 2011 21:30:29 +0000
+
+libasync-mergepoint-perl (0.02-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #527183)
+
+ -- Jonathan Yu <frequency@cpan.org>  Tue, 5 May 2009 23:38:19 -0400
